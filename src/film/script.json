@@ -1,0 +1,21 @@
+{
+  "title": "Mon premier film en code",
+  "format": "16:9",
+  "model": "eleven_v4",
+  "language": "fr",
+  "voices": {
+    "me": { "voice": "me", "label": "Votre voix (VOICE_ME dans .env : voix clonée ou pré-faite ElevenLabs)", "stability": 0.45, "similarity": 0.85 },
+    "mascot": { "voice": "bIHbv24MWmeRgasZH58o", "label": "Will — Relaxed Optimist (voix pré-faite ElevenLabs)", "stability": 0.5, "similarity": 0.75 }
+  },
+  "outroSeconds": 4,
+  "scenes": [
+    { "id": "intro", "note": "Le personnage au centre de la plaine néon, la mascotte apparaît" },
+    { "id": "tour", "note": "La caméra recule et révèle le monde et le cœur hexagonal" },
+    { "id": "title", "note": "Carte titre" }
+  ],
+  "lines": [
+    { "id": "l01", "who": "me", "scene": "intro", "pauseBefore": 1.2, "mood": "happy", "text": "Bienvenue dans mon monde. Tout ce que tu vois ici est écrit en code." },
+    { "id": "l02", "who": "mascot", "scene": "intro", "pauseBefore": 0.6, "text": "Three.js dessine, Remotion filme, et la voix vient d'ElevenLabs. Aucun modèle téléchargé." },
+    { "id": "l03", "who": "me", "scene": "tour", "pauseBefore": 0.8, "mood": "wow", "text": "Un monde entier, une caméra par plan, des sous-titres… et maintenant, à toi de jouer." }
+  ]
+}

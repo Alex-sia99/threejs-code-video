@@ -1,0 +1,11 @@
+node_modules/
+out/
+build/
+build-*/
+.env
+*.log
+# musiques et voix générées (gardez les exemples)
+public/music/*.mp3
+!public/music/README.md
+public/vo/*.mp3
+!public/vo/l0*.mp3

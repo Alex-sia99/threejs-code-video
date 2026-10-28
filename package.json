@@ -1,0 +1,36 @@
+{
+  "name": "threejs-code-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Template Remotion + Three.js pour créer des vidéos 100 % en code : personnage sculpté, monde néon, film avec voix off, boucles parfaites pour écrans de live.",
+  "scripts": {
+    "dev": "remotion studio",
+    "bundle": "remotion bundle --out-dir build",
+    "still:lab": "remotion still src/index.ts CharacterLab out/lab.png --frame=0 --gl=angle",
+    "render:film": "remotion render src/index.ts ExampleFilm out/film.mp4 --gl=angle",
+    "render:loop": "remotion render src/index.ts ExampleLoop out/loop.mp4 --gl=angle",
+    "timeline": "node scripts/timeline-placeholder.js",
+    "tts": "node scripts/tts.js",
+    "mix": "node scripts/mix.js",
+    "loop:mix": "node scripts/loop-mix.js",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/cli": "4.0.489",
+    "@remotion/google-fonts": "4.0.489",
+    "@remotion/three": "4.0.489",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.489",
+    "three": "^0.186.0",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.186.0",
+    "typescript": "^5.8.0"
+  }
+}
